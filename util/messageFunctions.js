@@ -15,7 +15,7 @@ module.exports = (message, client) => {
         )
     }
 
-    message.success = (text) => {
+    message.succes = (text) => {
         return message.channel.send(message.embed()
             .setDescription(`✅ - ${text}`)
             .setColor("#00ff00")

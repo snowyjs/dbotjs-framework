@@ -39,37 +39,37 @@ new DF.Client({
 
 # 🤖 All functions
 ## Embeds
-Success embed:
+- Success embed:
 ```if (args[0]) message.success("This is a success embed!")```
 
-Send a automatic error
+- Send a automatic error
 ```if (!args[0]) return message.error("No args provided")```
 
-Embed:
+- Embed:
 ```message.sendEmbed({title: "test", desc: "test", color: "#00ff00"})```
 
-Find a member:
+- Find a member:
 ```
 let member = message.getMember(args[0]);
 if (!member) return message.error("No member found!");
 ```
 
-Find a channel:
+- Find a channel:
 ```
 let channel = message.getChannel(args[0]);
 if (!channel) return message.error("No channel found!");
 ```
 
-Find a role:
+- Find a role:
 ```
 let role = message.getRole(args[0]);
 if (!role) return message.error("No role found!");
 ```
 
-Check user is guild owner:
+- Check user is guild owner:
 ```if(!message.member.isOwner()) return message.error("User is no owner!");```
 
-Check user is admin:
+- Check user is admin:
 ```if(!message.member.isAdmin()) return message.error("User is no admin!");```
 
 # 📑 License

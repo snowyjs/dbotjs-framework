@@ -1,7 +1,7 @@
 {
   "name": "dbotjs-framework",
   "version": "1.0.5",
-  "description": "",
+  "description": "This framework makes creating a bot much easier! With this module you can create a good basis for bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

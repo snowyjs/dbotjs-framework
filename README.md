@@ -11,7 +11,8 @@ let Dbot = new DF.Client({
     token: "TOKEN" // Bot token
 })
 
-Dbot.connect();```
+Dbot.connect();
+```
 
 3. Make a coomands folder with the name: "commands". Example:
 ``` module.exports = {
@@ -20,7 +21,8 @@ Dbot.connect();```
     run: async (client, message, args) => {
         // Code here
     },
-};```
+};
+```
 
 # ⚙ Options
 ```new DF.Client({
@@ -29,7 +31,8 @@ Dbot.connect();```
     status: "test", // Bot status
     statusType: "WATCHING", // Bot status type
     embedColor: "#ff0000" // Color of a embed
-})```
+})
+```
 
 # 🤖 All functions
 ## Embeds
@@ -44,21 +47,24 @@ Embed:
 
 Find a member:
 ```let member = message.getMember(args[0]);
-if (!member) return message.error("No member found!"); ```
+if (!member) return message.error("No member found!");
+```
 
 Find a channel:
 ```let channel = message.getChannel(args[0]);
-if (!channel) return message.error("No channel found!"); ```
+if (!channel) return message.error("No channel found!");
+```
 
 Find a role:
 ```let role = message.getRole(args[0]);
-if (!role) return message.error("No role found!"); ```
+if (!role) return message.error("No role found!");
+```
 
 Check user is guild owner:
-```if(!message.member.isOwner()) return message.error("User is no owner!"); ```
+```if(!message.member.isOwner()) return message.error("User is no owner!");```
 
 Check user is admin:
-```if(!message.member.isAdmin()) return message.error("User is no admin!"); ```
+```if(!message.member.isAdmin()) return message.error("User is no admin!");```
 
 # 📑 License
 This project has an <a href="https://github.com/DotwoodMedia/dbotjs-framework/blob/main/LICENSE">Apache 2.0</a> license

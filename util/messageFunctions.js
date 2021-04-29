@@ -17,19 +17,38 @@ module.exports = (message, client) => {
 
     message.succes = (text) => {
         return message.channel.send(message.embed()
-            .setDescription(`✔ - ${text}`)
+            .setDescription(`✅ - ${text}`)
             .setColor("#00ff00")
         )
     }
 
-    message.sendEmbed = ({ embed: embed = message.embed(), title: title, desc: desc, color: color, footer: footer }) => {
+    message.sendEmbed = ({ embed: embed = message.embed(), title: title, desc: desc, color: color }) => {
         if (title) embed.setTitle(title);
-        if (desc && desc.length >= 2048) embed.setDescription(desc.substr(0, 2044) + "...");
-        else if (desc >= 2048) embed.setDescription(desc);
+        if (desc) embed.setDescription(desc);
         if (color) embed.setColor(color);
-        if (footer) embed.setFooter(footer);
         return message.channel.send(embed);
     }
+
+    message.getMember = (member) => {
+        return message.mentions.members.first() || message.guild.members.cache.get(member);
+    }
+
+    message.getChannel = (channel) => {
+        return message.mentions.channels.first() || message.guild.channels.cache.get(channel);
+    }
+
+    message.getRole = (role) => {
+        return message.mentions.roles.first() || message.guild.roles.cache.get(role);
+    }
+
+    message.member.isAdmin = () => {
+        if (message.member.hasPermission("ADMINISTRATOR")) return true;
+    }
+
+    message.member.isOwner = () => {
+        if (message.guild.ownerID == message.author.id) return true;
+    }
+
 
     return message;
 }

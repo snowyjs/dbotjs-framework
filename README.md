@@ -3,7 +3,7 @@ This framework makes creating a bot much easier! With this module you can create
 
 <a href="https://www.npmjs.com/package/dbotjs-framework"><img src="https://img.shields.io/npm/v/dbotjs-framework.svg?maxAge=3600" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/dbotjs-framework"><img src="https://img.shields.io/npm/dt/dbotjs-framework.svg?maxAge=3600" alt="NPM downloads" /></a>
-<a href="https://david-dm.org/discordjs/dbotjs-framework"><img src="https://img.shields.io/david/discordjs/dbotjs-framework.svg?maxAge=3600" alt="Dependencies" /></a>
+<a href="https://david-dm.org/dbotjs-framework/dbotjs-framework"><img src="https://img.shields.io/david/dbotjs-framework/dbotjs-framework.svg?maxAge=3600" alt="Dependencies" /></a>
 
 #💻 Installation
 

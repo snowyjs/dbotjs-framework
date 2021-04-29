@@ -5,7 +5,8 @@ This framework makes creating a bot much easier! With this module you can create
 
 1. Install module: `npm install dbotjs-framework`
 2. Make a index.js file. Example:
-```const DF = require("dbotjs-framework");
+```
+const DF = require("dbotjs-framework");
 let Dbot = new DF.Client({
     prefix: "!", // Bot prefix > !help, !test
     token: "TOKEN" // Bot token
@@ -15,7 +16,8 @@ Dbot.connect();
 ```
 
 3. Make a coomands folder with the name: "commands". Example:
-``` module.exports = {
+``` 
+module.exports = {
     name: "test",
     description: "This is an test command",
     run: async (client, message, args) => {
@@ -25,7 +27,8 @@ Dbot.connect();
 ```
 
 # ⚙ Options
-```new DF.Client({
+```
+new DF.Client({
     prefix: "!", // Bot prefix > !help, !test
     token: "TOKEN", // Bot token
     status: "test", // Bot status
@@ -46,17 +49,20 @@ Embed:
 ```message.sendEmbed({title: "test", desc: "test", color: "#00ff00"})```
 
 Find a member:
-```let member = message.getMember(args[0]);
+```
+let member = message.getMember(args[0]);
 if (!member) return message.error("No member found!");
 ```
 
 Find a channel:
-```let channel = message.getChannel(args[0]);
+```
+let channel = message.getChannel(args[0]);
 if (!channel) return message.error("No channel found!");
 ```
 
 Find a role:
-```let role = message.getRole(args[0]);
+```
+let role = message.getRole(args[0]);
 if (!role) return message.error("No role found!");
 ```
 
